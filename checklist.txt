@@ -1,0 +1,71 @@
+Technology Stack:
+-----------------
+Windows
+NodeJs
+Angular 2+
+Heroku
+Firebase
+IMDB API
+------------------
+What to do when the server is down?
+
+
+-Check Heroku platform and read error logs/messages
+-Check NodeJs version list to see if new update had breaking changes.
+-Check Webpack config to see if changes need to be made.
+-Test application in offline environment to isolate the issue or bug.
+
+-------------------------------------------
+What to do when server is up, but it's returning error codes?
+
+-Check Heroku platform and read error logs/messages.
+-Check NodeJs version list to see if new update had breaking changes.
+-Depending on where the error codes resides, or states, troubleshoot the frontend or backend framework.
+
+----------------------------------------------
+What to do when the server is online, but is operating extremely slowly?
+
+-Pull up chrome devtools to see network traffic.
+-Check maintenance logs at Heroku, firebase, and IMDB.
+-Test offline version of app to see if problem persists.
+-Test each component is isolation to see where the problem lies.
+
+===========================================================================================
+EMERGENCY DATA BREACH
+============================
+
+In preparation for the possibility of an attack?
+
+- setup an  Intrusion Detection System
+- re-verify that you're not exposing any insecure services
+- Educate employees on safety procedures.
+-----------------------------------------
+
+Abnormal inbound web traffic is detected?
+
+- Possible DoS attack
+- find the offending IP addresses in the firewall logs and blacklist them.
+-  If we are the only target, contact the FBI
+-------------------------------------------
+
+There is evidence your network is under attack from the outside?
+
+- find the offending IP addresses in the firewall logs and blacklist them.
+- Look for vulnerable ports in the network.
+- Make sure there are no sensitive info laying around for easy access.
+- Contact authorities
+---------------------------------------
+
+Anomalous activity is detected on the internal network?
+
+- Run an IDS system
+- Run a port scan
+- use firewall settings to block incoming/outgoing traffic pertaining to the specific area in question
+- check for security patches and update them to the network.
+--------------------------
+
+An attack is over?
+
+- continue to monitor traffic anomalies
+- train employees on the safety of cyber security
+- create a gameplan in case it happens again
